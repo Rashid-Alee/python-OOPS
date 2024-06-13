@@ -15,13 +15,12 @@ class Animal:
 # Define the Dog subclass that inherits from Animal
 class Dog(Animal):
     def __init__(self, name, breed):
-        super().__init__(
-            name, species="Dog"
-        )  # Call the superclass (Animal) constructor
+        # Initialize the base class (Animal) attributes
+        super().__init__(name, species="Dog")
         self.breed = breed  # Breed of the dog
 
     def make_sound(self):
-        # Override the make_sound method to provide a specific implementation
+        # Provide a specific implementation for the Dog class
         return "Woof!"
 
 
